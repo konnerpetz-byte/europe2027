@@ -222,7 +222,7 @@
   <div class="wrap">
     <div class="hero-eyebrow">Alpine Field Notebook · 16–31 May 2027</div>
     <h1>Lakes, trails &amp;<br><em>whitewater.</em></h1>
-    <p class="hero-sub">Sixteen days tracing alpine water west from Munich across Austria to Switzerland — beer gardens and castles in Bavaria, lakes and fortresses through the Salzkammergut and Tyrol, then rafting and lakeside days down to Lake Constance and Lucerne. A shared plan for Konner &amp; Shane.</p>
+    <p class="hero-sub">Sixteen days tracing alpine water west from Munich across Austria to Switzerland — beer gardens and castles in Bavaria, lakes and fortresses through the Salzkammergut and Tyrol, then rafting and lakeside days down to Lake Constance and Lucerne.</p>
     <div class="route-strip"><span>Munich</span><span class="arw">→</span><span>Salzkammergut</span><span class="arw">→</span><span>Tyrol</span><span class="arw">→</span><span>Konstanz</span><span class="arw">→</span><span>Lucerne</span></div>
     <div class="meta-row">
       <div><b>16</b>days</div>
@@ -397,7 +397,7 @@
     <p class="sec-lede">Anything to add, swap, or veto? Send it through the shared form.</p>
     <div class="cbox">
       <p class="cbox-copy">Ideas, swaps, rest-day requests, a lake you'd rather do instead, literally whatever you want that's reasonable.</p>
-      <a class="form-btn" id="formBtn" href="REPLACE_WITH_FORM_LINK" target="_blank" rel="noopener">Open the suggestion form →</a>
+      <a class="form-btn" id="formBtn" href="https://docs.google.com/forms/d/e/1FAIpQLSe-btxc15eIVCLYE7F0Wj4CMmlCuTzuvjsboi3TcZw-SQN5TA/viewform" target="_blank" rel="noopener">Open the suggestion form →</a>
     </div>
   </section>
 
@@ -442,16 +442,13 @@
   });
 
   /* ---- suggestion form link guard ---- */
-  (function(){
-    var btn=document.getElementById('formBtn');
-    var note=document.getElementById('formNote');
-    if(btn && btn.getAttribute('href') && btn.getAttribute('href').indexOf('http')===0){
-      note.style.display='none';           // real link present -> hide the reminder
-    }else if(btn){
-      btn.addEventListener('click',function(e){e.preventDefault();
-        open index.html and replace https://docs.google.com/forms/d/e/1FAIpQLSe-btxc15eIVCLYE7F0Wj4CMmlCuTzuvjsboi3TcZw-SQN5TA/viewform?usp=publish-editor.');});
-    }
-  })();
+    (function(){
+          var btn=document.getElementById('formBtn');
+          var note=document.getElementById('formNote');
+          if(btn && btn.getAttribute('href') && btn.getAttribute('href').indexOf('http')===0){
+                  note.style.display='none';           // real link present -> hide the reminder
+          }
+    })();
 
 
   /* photo reel controls */
